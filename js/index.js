@@ -1,4 +1,6 @@
-function GeneratePic(){
+//For Generate Pin 
+
+function GeneratePin(){
     const generateNum = '0123456789';
         var ShowPin = "";
     for (let i = 0; i <4; i++) {
@@ -13,11 +15,11 @@ function removeInput(id){
     document.getElementById(id).value="";
 }
 
+//Input Number Add For Result 
+
 let InputNum = document.getElementById('showNum');
 let buttonNum = document.querySelectorAll(".button");
-
 const InputValue = " ";
-
 for (item of buttonNum) {
     item.addEventListener('click',(e)=>{
        const buttonText = e.target.innerText;
@@ -26,7 +28,6 @@ for (item of buttonNum) {
           InputNum.value = " ";
         }
     });
-    
 }
 //Generate pin With Submit Number For Matched
 
