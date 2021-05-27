@@ -39,9 +39,9 @@ document.getElementById('submit_btn').addEventListener('click',function(){
      removeInput('showNum');
 
     if(generatePinNum == submitPinNum){
-        document.getElementById('demo').innerHTML='✅ Pin Matched... Secret door is opening for you';
+        document.getElementById('notification').innerHTML='✅ Pin Matched... Secret door is opening for you';
     }else{
-        document.getElementById('demo').innerHTML = "❌ Pin Didn't Match, Please try again";
-        document.getElementById('demo1').innerHTML = "3 try left";
+        document.getElementById('notification').innerHTML = "❌ Pin Didn't Match, Please try again";
+        document.getElementById('notification_alert').innerHTML = "3 try left";
     }
 })
