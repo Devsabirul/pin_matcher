@@ -7,12 +7,11 @@ function GeneratePic(){
     }
     document.getElementById("pin_output").value = ShowPin; 
 };
+// For remove Input Value 
 
 function removeInput(id){
     document.getElementById(id).value="";
 }
-
-
 //Generate pin With Submit Number For Matched
 
 document.getElementById('submit_btn').addEventListener('click',function(){
