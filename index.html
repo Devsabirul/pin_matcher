@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Generator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pin-generator half-width">
+                    <input id="pin_output" class="form-control" type="text">
+                    <button id="generate_btn" onclick="GeneratePic()" class="generate-btn">Generate Pin</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-section half-width">
+                    <input id="showNum" class="form-control" type="text">
+                    <div class="numbers">
+                        <div class="calc-body">
+                            <div class="calc-button-row">
+                              <div id="btn_7" onclick="submit_num()" class="button">7</div>
+                              <div id="btn_8" class="button">8</div>
+                              <div id="btn_9" class="button">9</div>
+                            </div>
+                            <div class="calc-button-row">
+                              <div id="btn_4" class="button">4</div>
+                              <div id="btn_5" class="button">5</div>
+                              <div id="btn_6" class="button">6</div>
+                            </div>
+                            <div class="calc-button-row">
+                              <div id="btn_1" class="button">1</div>
+                              <div id="btn_2" class="button">2</div>
+                              <div id="btn_3" class="button">3</div>
+                            </div>
+                            <div class="calc-button-row">
+                                <div class="button"><</div>
+                                <div class="button">0</div>
+                                <div class="button">C</div>
+                            </div>
+                            <div>
+                                <button type="submit" id="submit_btn" class="submit-btn">Submit</button>
+                                <p id="demo1" class="action-left"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notify-section">
+            <p id="demo" class="notify"> </p>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
