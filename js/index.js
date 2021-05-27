@@ -12,6 +12,22 @@ function GeneratePic(){
 function removeInput(id){
     document.getElementById(id).value="";
 }
+
+let InputNum = document.getElementById('showNum');
+let buttonNum = document.querySelectorAll(".button");
+
+const InputValue = " ";
+
+for (item of buttonNum) {
+    item.addEventListener('click',(e)=>{
+       const buttonText = e.target.innerText;
+        InputNum.value += buttonText;
+        if(buttonText == 'C'){
+          InputNum.value = " ";
+        }
+    });
+    
+}
 //Generate pin With Submit Number For Matched
 
 document.getElementById('submit_btn').addEventListener('click',function(){
